@@ -3,28 +3,17 @@ function criarLista(imgPath, id){
   ul.setAttribute("style", "list-style-type: none")
   ul.setAttribute("class", "row")
 
-  // ul.innerHTML = `
-  // <div class="col-md-3">
-  //   <li>
-  //     <img src="${imgPath}" style="width: 200px; heigth: 300px" id=${id}/>
-  //   </li>
-  // </div> 
-  // `
+  const div = document.createElement('div')
+  div.setAttribute("class", "col-md-3")
 
-  const div = document.createElement("div")
-  div.setAttribute("class","col-md-3")
+  div.innerHTML = `
+    <li>
+      <a href="./sinopses.html#${id}">
+        <img src="${imgPath}" style="width: 200px; heigth: 300px" id=${id}/>
+      </a>
+    </li>
+  `
 
-  const filme = document.createElement('li')
-  
-  const img = document.createElement('img')
-  img.setAttribute('style', "width: 200px")
-  img.setAttribute('style', "height: 300px")
-  img.setAttribute("id", id)
-  img.src = imgPath
-
-  filme.appendChild(img)
-  div.appendChild(filme)
-  
   ul.appendChild(div)
 }
 
@@ -35,9 +24,18 @@ async function percorrerDB(){
   })
   
   for(let i of database) {
-    
-    criarListaSinopse(i.img, i.id)
 
+    if(i.id > database.length - 4){
+      criarLista(i.img, i.id)
+
+    }
+
+
+    if(i.id < 5){
+criarListaEmAlta(i.img, i.id)
+    }
+   
+    
   }
 }
 
@@ -70,30 +68,46 @@ async function salvar(){
   autor.innerHTML = ""
   img.innerHTML = ""
 
+
 }
 
-function criarListaSinopse(imgPath, id){
-  const ul = document.querySelector('#lista-filmes-sinopse')
-  //ul.setAttribute("style", "list-style-type: none")
-  //ul.setAttribute("class", "row")
+function criarListaEmAlta(imgPath, id){
+  const ul = document.querySelector('#ultimos-filmes')
+  ul.setAttribute("style", "list-style-type: none")
+  ul.setAttribute("class", "row")
 
-  const div = document.createElement("div")
-  div.setAttribute("class","col-md-3")
+  const div = document.createElement('div')
+  div.setAttribute("class", "col-md-3")
 
-  const filme = document.createElement('li')
+  div.innerHTML = `
+    <li>
+      <a href="./sinopses.html#${id}">
+        <img src="${imgPath}" style="width: 200px; heigth: 300px" id=${id}/>
+      </a>
+    </li>
+  `
 
-  const a = document.createElement('a')
-  a.href= `./sinopse.html#${id}`  
+  ul.appendChild(div)
 
-  const img = document.createElement('img')
-  img.setAttribute('style', "width: 200px")
-  img.setAttribute('style', "height: 300px")
-  img.setAttribute("id", id)
-  img.src = imgPath
 
-  a.appendChild(img)
-  filme.appendChild(a)
-  div.appendChild(filme)
+}
+
+function criarListaEmAlta(imgPath, id){
+  const ul = document.querySelector('#lista-filmes-alta')
+  ul.setAttribute("style", "list-style-type: none")
+  ul.setAttribute("class", "row")
+
+  const div = document.createElement('div')
+  div.setAttribute("class", "col-md-3")
+
+  div.innerHTML = `
+    <li>
+      <a href="./sinopses.html#${id}">
+        <img src="${imgPath}" style="width: 200px; heigth: 300px" id=${id}/>
+      </a>
+    </li>
+  `
+
   ul.appendChild(div)
 }
  
