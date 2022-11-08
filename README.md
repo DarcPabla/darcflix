@@ -54,7 +54,7 @@ Para rodar o projeto é só seguir os seguintes passos:
    2. Instale as dependências: `npm install`
    3. Execute a aplicação: `npm start`
 4. Inicie o frontend
-   1. Copie o caminho completo do arquivo `darcflix/frontend/opcional/index.html` em seu navegador
+   1. Clicar no arquivo index.html com a parte direita do mouse, e depois clicar na opção "Open with Lite Server".
 
 ---
 
