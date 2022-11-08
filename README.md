@@ -1,5 +1,4 @@
-# darcflix
-Desenvolvimento de uma aplicação de streaming de videos 
+
 <h1 align="center">DAR'C FLIX</h1>
 
 <p align="center">
