@@ -1,4 +1,3 @@
-
 <h1 align="center">DAR'C FLIX</h1>
 
 <p align="center">
@@ -13,7 +12,7 @@ Desenvolvimento de uma mini plataforma colaborativa de catálogo de filmes. 📖
   <a href="#pre-requisitos">Pré-Requisitos</a> •
   <a href="#rodando-projeto">Rodando o Projeto</a> •
   <a href="#tecnologias">Tecnologias</a> •
-  <a href="#autor">Autor</a>
+  <a href="#autor">Autora</a>
 </p>
 
 ---
@@ -21,10 +20,10 @@ Desenvolvimento de uma mini plataforma colaborativa de catálogo de filmes. 📖
 <h2 id="demonstracao">📽️ Demonstração</h2>
 
 <p align="center">
-  <img src="/home.png" width="800px" height="500px"/>
-  <img src="/filmes.png" width="800px" height="500px"/>
-  <img src="/sinopse.png" width="800px" height="500px"/>
-  <img src="/cadastro.png" width="800px" height="500px"/>
+  <img src="./home.png" width="800px" height="500px"/>
+  <img src="./filmes.png" width="800px" height="500px"/>
+  <img src="./sinopse.png" width="800px" height="500px"/>
+  <img src="./cadastro.png" width="800px" height="500px"/>
 </p>
 
 ---
@@ -40,53 +39,34 @@ Desenvolvimento de uma mini plataforma colaborativa de catálogo de filmes. 📖
 <h2 id="pre-requisitos">⚙️ Pré-requisitos</h2>
 Para começar, você precisa ter instalado as seguintes ferramentas:
 
-<ul>
-  <li><a href="https://git-scm.com">Git</a></li>
-  <li><a href="https://nodejs.org/en/">NodeJS</a>
-  </li>
-</ul>
+- [Git](https://git-scm.com)
+- [NodeJS](https://nodejs.org/en)
 
 ---
 
 <h2 id="rodando-projeto"> 🧑‍💻 Rodando o projeto</h2>
 Para rodar o projeto é só seguir os seguintes passos:
 
-<ol>
-  <li>Você deve estar conectado no PC;</li>
-  <li>Clone o repositório:
-    <code>
-      git clone https://github.com/DarcPabla/darcflix.git
-    </code>
-  </li>
-  <li>Entre no diretório do projeto:
-    <code>cd darcflix</code>
-  </li>
-  <li>Instale as dependências:
-    <code>npm install</code>
-  </li>
-  <li>Execute a aplicação:
-    <ol>
-      <li>
-        <code>entrar na pasta backend</code>
-      </li>
-      <li><code>execultar no terminal npm run start</code></li>
-      <li><code>para visualizar o front, clicar na direita do mouse, no arquivo index.html e clicar em "open with live server"</code></li>
-    </ol>
-  </li>
-</ol>
+1. Você deve estar conectado no PC;</li>
+2. Clone o repositório: `git clone https://github.com/DarcPabla/darcflix.git`
+3. Inicie o backend
+   1. Entre na pasta: `cd darcflix/backend`
+   2. Instale as dependências: `npm install`
+   3. Execute a aplicação: `npm start`
+4. Inicie o frontend
+   1. Copie o caminho completo do arquivo `darcflix/frontend/opcional/index.html` em seu navegador
 
 ---
 
 <h2 id="tecnologias"> 🤖 Tecnologias</h2>
+
 As seguintes tecnologias foram usadas nesse projeto:
 
-<ul>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
-  <li><a href="https://nodejs.org/en/">Node Js</a></li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a></li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
-  <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-</ul>
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [Node Js](https://nodejs.org/en/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Bootstrap](https://getbootstrap.com/)
 
 ---
 
@@ -98,4 +78,3 @@ As seguintes tecnologias foram usadas nesse projeto:
  <sub><b>Darc Pabla</b></sub>
 </a>
  <br/>
-
