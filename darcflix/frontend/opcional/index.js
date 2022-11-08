@@ -30,6 +30,11 @@ async function percorrerDB(){
 
     }
 
+    if(i.id < 5){
+      criarListaUltimos(i.img, i.id)
+
+    }
+
 
     if(i.id < 5){
 criarListaEmAlta(i.img, i.id)
@@ -71,7 +76,7 @@ async function salvar(){
 
 }
 
-function criarListaEmAlta(imgPath, id){
+function criarListaUltimos(imgPath, id){
   const ul = document.querySelector('#ultimos-filmes')
   ul.setAttribute("style", "list-style-type: none")
   ul.setAttribute("class", "row")
