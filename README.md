@@ -40,6 +40,7 @@ Desenvolvimento de uma mini plataforma colaborativa de catálogo de filmes. 📖
 Para começar, você precisa ter instalado as seguintes ferramentas:
 
 - [Git](https://git-scm.com)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [NodeJS](https://nodejs.org/en)
 
 ---
