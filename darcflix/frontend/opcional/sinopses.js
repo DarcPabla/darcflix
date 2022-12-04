@@ -1,41 +1,27 @@
-function criarLista(imgPath, nome, sinopse, id) {
-  const ul = document.querySelector("#lista-filmes-sinopse");
-  ul.setAttribute("style", "list-style-type: none");
-  ul.setAttribute("class", "row");
-
-  const section = document.createElement("section");
-  section.setAttribute("class", "sinopse");
-  section.setAttribute("style", "width: 100%");
+function criarSinopse(imgPath, nome, sinopse, id) {
+  const section = document.querySelector("section");
   section.setAttribute("id", id + nome);
 
   section.innerHTML = `
     <img src="${imgPath}" alt="${nome}" style="width: 200px; height: 300px">
     <div>
-      <h3>${nome}</h3>
-      <h4>SINOPSE</h4>
-      <p>${sinopse}</p>
-      <button type="button" class="btn btn-outline-warning">Play</button>
-    </div>
-    
-    <br />`;
-
-  ul.appendChild(section);
+      <h1>${nome}</h1>
+      <p class="h4">SINOPSE</p>
+      <p class="text-justify">${sinopse}</p>
+      <button type="button" class="btn btn-outline-warning">Assistir</button>
+    </div>`;
 }
 
-async function percorrerDB() {
+async function script() {
   const id = window.location.hash.replace("#", "");
 
-  console.log(id);
+  const response = await fetch(`http://localhost:3000/filmes/${id}`);
+  const filme = await response.json();
 
-  let database;
-  await fetch(`http://localhost:3000/filmes/${id}`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      database = data;
-    });
+  // Altera título da página
+  document.querySelector("title").innerText = `${filme.nome} - DAR'C FLIX`;
 
-  criarLista(database.img, database.nome, database.sinopse, database.id);
+  criarSinopse(filme.img, filme.nome, filme.sinopse, filme.id);
 }
 
-percorrerDB();
+script();
