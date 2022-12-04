@@ -6,17 +6,6 @@ body {
   background-color: black;
 }
 
-#textpos1 {
-  text-align: justify;
-  float: left;
-  margin: 10%;
-}
-
-#textpos2 {
-  position: absolute;
-  left: 10%;
-}
-
 .sinopse {
   display: flex;
   justify-content: flex-start;
@@ -24,4 +13,16 @@ body {
 .sinopse img,
 .sinopse div {
   padding: 10px;
+}
+
+.img-carrossel {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.encarte {
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
 }
