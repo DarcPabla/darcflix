@@ -1,31 +1,27 @@
-html, body {
-  color: #EBE7F3; 
+html,
+body {
+  color: #ebe7f3;
   height: 100%;
   width: 100%;
-/*   background-color: #241545; */
   background-color: black;
 }
 
 #textpos1 {
   text-align: justify;
-  
   float: left;
-  margin:10%;
+  margin: 10%;
 }
 
 #textpos2 {
-  
   position: absolute;
   left: 10%;
 }
 
-/*Teste*/
-
-.sinopse{
-    display: flex;
-    justify-content: flex-start;
+.sinopse {
+  display: flex;
+  justify-content: flex-start;
 }
 .sinopse img,
-.sinopse div{
-    padding: 10px
+.sinopse div {
+  padding: 10px;
 }
