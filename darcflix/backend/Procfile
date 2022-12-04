@@ -1,1 +1,0 @@
-web: cd darcflix/backend && npm start

@@ -1,0 +1,29 @@
+html,
+body {
+  color: #ebe7f3;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(246 6% 9%);
+}
+
+.sinopse {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.sinopse img,
+.sinopse div {
+  padding: 10px;
+}
+
+.img-carrossel {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.encarte {
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
+}
